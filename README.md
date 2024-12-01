@@ -1,50 +1,30 @@
-# React + TypeScript + Vite
+<!-- // write me an md file which about this react app title should be VideoStreamingPlatform 
+sections are 
+Introduction
+Features
+Tech Used  -->
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## VideoStreamingPlatform 
 
-Currently, two official plugins are available:
+This is a video streaming platform like youtube users can login, register and can create their own channel where they can upload there videos and other users can subscribe to their channel.
+and like and share their videos with other users in the platform.
+users should be able to view.
+videos in **fullscreen** and in different **qualities** with different **bitrates**. 
+this is a **monolith** and in future will shift to **microservices**. 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**Language**: Typescript
 
-## Expanding the ESLint configuration
+### Tech Used
+1) **React** for the frontend.
+2) **Nodejs** and **Express** for the backend.
+3) **ReactHookForms** for the forms.
+4) **MongoDB** for the database.
+5) **Zod** for the form validation.
+6) **Tailwind** for css 
+7) **Shadcn** Component Library
+8) **React-Query** for data fetching and mutation
+9) **Redux-toolkit** for global state managment
+10) **React-Router-Dom** for page router
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
 
-- Configure the top-level `parserOptions` property like this:
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
