@@ -166,7 +166,7 @@ export async function postRegister(req: Request, res: Response) {
         if (user) {
           const response: ApiResponse = {
             success: true,
-            message: "user created successfully",
+            message: "Registration successful",
             statusCode: 201,
           };
           res.status(201).json(response);
